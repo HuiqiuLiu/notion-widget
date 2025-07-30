@@ -44,19 +44,24 @@ body {
 
 
 .slide:first-child {
-  background: url("1.png") no-repeat
+  background: url("vision-1.png") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url("2.png") no-repeat
+  background: url("vision-2.png") no-repeat
     center top/cover;
 }
 
-.slide:nth-child(3) {
-  background: url("3.png") no-repeat
+/* .slide:nth-child(3) {
+  background: url("journal-3.png") no-repeat
     center top/cover;
 }
+
+.slide:nth-child(4) {
+  background: url("journal-4.png") no-repeat
+    center top/cover;
+} */
 
 
 .buttons button#prev {
@@ -111,7 +116,7 @@ body {
   <div class="slider">
     <div class="slide current"></div>
     <div class="slide"></div>
-    <div class="slide"></div>
+<!--     <div class="slide"></div> -->
 
   </div>
   <div class="buttons">
@@ -124,7 +129,7 @@ body {
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 5000;
+    const intervalTime = 7000;
     let slideInterval;
 
     const nextSlide = () => {
